@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,7 +54,7 @@ height:40px;
 nav a{
 color:white;
 text-decoration:none;
-margin-left:18px;
+margin-left:20px;
 font-weight:500;
 }
 
@@ -79,7 +78,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.55);
+background:rgba(0,0,0,0.6);
 }
 
 .hero-content{
@@ -127,10 +126,10 @@ margin-top:30px;
 
 .schools img{
 height:60px;
-opacity:0.85;
+opacity:0.9;
 }
 
-/* CARDS */
+/* PROGRAM CARDS */
 
 .cards{
 display:grid;
@@ -177,14 +176,6 @@ padding:12px;
 font-weight:bold;
 }
 
-/* VIDEO */
-
-.video{
-max-width:800px;
-margin:auto;
-margin-top:30px;
-}
-
 /* FEATURES */
 
 .features{
@@ -199,6 +190,14 @@ background:white;
 padding:20px;
 border-radius:8px;
 box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* VIDEO */
+
+.video{
+max-width:800px;
+margin:auto;
+margin-top:30px;
 }
 
 /* TESTIMONIAL */
@@ -245,7 +244,7 @@ gap:12px;
 margin-top:20px;
 }
 
-form input, form textarea{
+form input,form textarea{
 padding:12px;
 border:none;
 border-radius:6px;
@@ -266,7 +265,7 @@ footer{
 background:#081f40;
 color:white;
 text-align:center;
-padding:20px;
+padding:30px;
 }
 
 /* WHATSAPP */
@@ -287,6 +286,7 @@ font-weight:bold;
 
 </head>
 
+
 <body>
 
 
@@ -300,10 +300,10 @@ font-weight:bold;
 </div>
 
 <div>
-<a href="#curriculum">Curriculum</a>
+<a href="#programs">Programs</a>
 <a href="#projects">Projects</a>
 <a href="#why">Why Code AI</a>
-<a href="#contact">Demo</a>
+<a href="#contact">Request Demo</a>
 </div>
 
 </nav>
@@ -317,7 +317,10 @@ font-weight:bold;
 
 <h1>AI, Coding & Robotics Programs for Schools</h1>
 
-<p>Preparing students for the AI-driven future through hands-on technology education.</p>
+<p>
+Students build real robots, learn Python programming,
+and explore Artificial Intelligence through hands-on projects.
+</p>
 
 <a class="hero-btn" href="#contact">Request School Demo</a>
 
@@ -344,32 +347,58 @@ font-weight:bold;
 </div>
 
 
-<!-- CURRICULUM -->
+<!-- PROGRAMS -->
 
-<div class="container" id="curriculum" data-aos="fade-up">
+<div class="container" id="programs" data-aos="fade-up">
 
-<h2>CODE AI Curriculum</h2>
+<h2>CODE AI Programs</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Level 1</h3>
-<p>Game Design & Computational Thinking</p>
+<h3>Level 1 – Game Design and computational thinking</h3>
+<ul>
+<li>Block based coding</li>
+<li>Game development basics</li>
+<li>Computational thinking</li>
+<li>Logic building</li>
+</ul>
+
 </div>
 
 <div class="card">
-<h3>Level 2</h3>
-<p>Python Programming & Robotics Foundations</p>
+<h3>Level 2 – Advanced Game Development and python Foundations</h3>
+<ul>
+<li>Advance game design using block coding</li>    
+<li>Python programming fundamentals</li>
+<li>Variables and loops</li>
+<li>Simple coding projects</li>
+<li>Intro to robotics concepts</li>
+</ul>
+
 </div>
 
 <div class="card">
-<h3>Level 3</h3>
-<p>Python Programming & Arduino Robotics</p>
+<h3>Level 3 – AI Foundations & Arduino Robotics</h3>
+<ul>
+<li>Python intermediate </li>
+<li>Artificial Intelligence basics</li>
+<li>Arduino hardware programming</li>
+<li>Obstacle avoiding robot</li>
+<li>Sensor based automation</li>
+</ul>
+
 </div>
 
 <div class="card">
-<h3>Level 4</h3>
-<p>AI & Intelligent Robotics</p>
+<h3>Level 4 – AI & Intelligent Robotics</h3>
+<ul>
+<li>python For AI</li>
+<li>Machine learning concepts</li>
+<li>Deep learning concepts</li>
+<li>AI robotics projects</li>
+<li>LLM chat bot Design</li>
+</ul>
 </div>
 
 </div>
@@ -387,22 +416,22 @@ font-weight:bold;
 
 <div class="project">
 <img src="images/DMS_im1.jpeg">
+<p>Coding class</p>
+</div>
+
+<div class="project">
+<img src="images/rob1.jpg">
 <p>Obstacle Avoiding Robot</p>
 </div>
 
 <div class="project">
-<img src="images/DMS_im2.jpeg">
-<p>Line Following Robot</p>
-</div>
-
-<div class="project">
 <img src="images/NPS_1.jpeg">
-<p>Arduino Smart Device</p>
+<p>Smart garbage classification system</p>
 </div>
 
 <div class="project">
 <img src="images/AIHS_1 (1).jpeg">
-<p>AI Robotics Project</p>
+<p>Water Turbidity measurement system</p>
 </div>
 
 </div>
@@ -419,7 +448,7 @@ font-weight:bold;
 <div class="video">
 
 <iframe width="100%" height="450"
-src="https://youtube.com/shorts/FBZD4PdtLCs?feature=share"
+src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
 frameborder="0"
 allowfullscreen></iframe>
 
@@ -428,27 +457,27 @@ allowfullscreen></iframe>
 </div>
 
 
-<!-- WHY -->
+<!-- WHY CODE AI -->
 
 <div class="container" id="why" data-aos="fade-up">
 
-<h2>Why Schools Choose CODE AI</h2>
+<h2>Why Schools Choose Code AI</h2>
 
 <div class="features">
 
 <div class="feature">
-<h3>Future Skills Curriculum</h3>
-<p>Students learn AI, coding and robotics through practical projects.</p>
+<h3>Hands-on Robotics Kits</h3>
+<p>Students build real robots using sensors, motors and microcontrollers.</p>
 </div>
 
 <div class="feature">
-<h3>Hands-on Robotics</h3>
-<p>Students build real robots using Arduino and sensors.</p>
+<h3>Future Skills Curriculum</h3>
+<p>Students learn coding, robotics and AI skills needed for the future.</p>
 </div>
 
 <div class="feature">
 <h3>Aligned with NEP 2020</h3>
-<p>Technology education aligned with modern curriculum goals.</p>
+<p>Programs designed to support modern STEM education goals.</p>
 </div>
 
 <div class="feature">
@@ -469,7 +498,7 @@ allowfullscreen></iframe>
 
 <p class="testimonial">
 
-“Students were extremely engaged during the robotics workshop and built real projects.”
+“Students were highly engaged during the robotics workshop and learned practical technology concepts.”
 
 </p>
 
@@ -489,7 +518,8 @@ allowfullscreen></iframe>
 <strong>Ranjan Ali</strong><br><br>
 
 M.Tech – IIT Guwahati<br>
-Senior Engineer – Mercedes-Benz R&D India<br>
+B.Tech – NIT Guwahati<br>
+Senior Engineer – Mercedes-Benz Research & Development India<br>
 Former Deputy Manager – Mahindra Electric<br>
 8+ Years Industry Experience
 
@@ -502,7 +532,9 @@ Former Deputy Manager – Mahindra Electric<br>
 
 <div class="cta" id="contact">
 
-<h2>Request a School Demo</h2>
+<h2>Bring AI & Robotics Education to Your School</h2>
+
+<p>Request a free demo session.</p>
 
 <form action="https://formspree.io/f/mreylnqo" method="POST">
 
@@ -525,7 +557,12 @@ Former Deputy Manager – Mahindra Electric<br>
 
 <footer>
 
-<p>© 2025 Code AI | AI Education for Schools</p>
+<p>
+Code AI<br><br>
+AI, Coding & Robotics Education for Schools<br><br>
+Phone: 7980610537<br>
+Email: codeai.edu@gmail.com
+</p>
 
 </footer>
 
@@ -545,4 +582,3 @@ once:true
 </body>
 
 </html>
-```
