@@ -3,12 +3,13 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Code AI | AI, Coding & Robotics Programs for Schools</title>
 
-<link rel="icon" href="images/codeai_logo.png">
+<link rel="icon" type="image/png" href="images/codeai_logo.png">
 
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -25,7 +26,7 @@ background:#f5f7fb;
 color:#333;
 }
 
-/* NAV */
+/* NAVBAR */
 
 nav{
 display:flex;
@@ -43,8 +44,8 @@ z-index:1000;
 display:flex;
 align-items:center;
 gap:10px;
+font-size:22px;
 font-weight:bold;
-font-size:20px;
 }
 
 .logo img{
@@ -54,7 +55,8 @@ height:40px;
 nav a{
 color:white;
 text-decoration:none;
-margin-left:15px;
+margin-left:18px;
+font-weight:500;
 }
 
 /* HERO */
@@ -62,12 +64,12 @@ margin-left:15px;
 .hero{
 height:100vh;
 background:url("images/hero-robotics.png") center/cover no-repeat;
-position:relative;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
+position:relative;
 }
 
 .hero::before{
@@ -77,7 +79,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.55);
 }
 
 .hero-content{
@@ -86,7 +88,7 @@ max-width:700px;
 }
 
 .hero h1{
-font-size:50px;
+font-size:48px;
 margin-bottom:20px;
 }
 
@@ -96,7 +98,7 @@ font-size:20px;
 
 .hero-btn{
 display:inline-block;
-margin-top:20px;
+margin-top:25px;
 padding:14px 30px;
 background:#ffcc00;
 color:#0b2c5f;
@@ -125,7 +127,7 @@ margin-top:30px;
 
 .schools img{
 height:60px;
-opacity:0.8;
+opacity:0.85;
 }
 
 /* CARDS */
@@ -243,7 +245,7 @@ gap:12px;
 margin-top:20px;
 }
 
-form input,form textarea{
+form input, form textarea{
 padding:12px;
 border:none;
 border-radius:6px;
@@ -278,21 +280,22 @@ color:white;
 padding:15px 18px;
 border-radius:50px;
 text-decoration:none;
+font-weight:bold;
 }
 
 </style>
 
 </head>
 
-
 <body>
 
-<!-- NAV -->
+
+<!-- NAVBAR -->
 
 <nav>
 
 <div class="logo">
-<img src="images/codeai-logo.png">
+<img src="images/codeai_logo.png">
 <span>CODE AI</span>
 </div>
 
@@ -327,7 +330,7 @@ text-decoration:none;
 
 <div class="container" data-aos="fade-up">
 
-<h2>Schools We Have Worked With</h2>
+<h2>Schools Where CODE AI Conducted Workshops</h2>
 
 <div class="schools">
 
@@ -345,48 +348,28 @@ text-decoration:none;
 
 <div class="container" id="curriculum" data-aos="fade-up">
 
-<h2>Code AI Curriculum</h2>
+<h2>CODE AI Curriculum</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Level 1</h3>
 <p>Game Design & Computational Thinking</p>
-<ul>
-<li>Scratch Programming</li>
-<li>Game Creation</li>
-<li>Logic Building</li>
-</ul>
 </div>
 
 <div class="card">
 <h3>Level 2</h3>
 <p>Python Programming & Robotics Foundations</p>
-<ul>
-<li>Python Basics</li>
-<li>Programming Logic</li>
-<li>Intro Robotics</li>
-</ul>
 </div>
 
 <div class="card">
 <h3>Level 3</h3>
-<p>Arduino Robotics</p>
-<ul>
-<li>Arduino Hardware</li>
-<li>Robot Building</li>
-<li>Sensor Programming</li>
-</ul>
+<p>Python Programming & Arduino Robotics</p>
 </div>
 
 <div class="card">
 <h3>Level 4</h3>
 <p>AI & Intelligent Robotics</p>
-<ul>
-<li>Machine Learning Intro</li>
-<li>AI Projects</li>
-<li>Smart Robotics</li>
-</ul>
 </div>
 
 </div>
@@ -404,22 +387,22 @@ text-decoration:none;
 
 <div class="project">
 <img src="images/DMS_im1.jpeg">
-<p>Coding Class</p>
+<p>Obstacle Avoiding Robot</p>
 </div>
 
 <div class="project">
-<img src="images/rob1.jpg">
+<img src="images/DMS_im2.jpeg">
 <p>Line Following Robot</p>
 </div>
 
 <div class="project">
 <img src="images/NPS_1.jpeg">
-<p>AI project for garbage classification</p>
+<p>Arduino Smart Device</p>
 </div>
 
 <div class="project">
 <img src="images/AIHS_1 (1).jpeg">
-<p>Water Turbidity measure</p>
+<p>AI Robotics Project</p>
 </div>
 
 </div>
@@ -431,12 +414,12 @@ text-decoration:none;
 
 <div class="container" data-aos="fade-up">
 
-<h2>Classroom Demo Session</h2>
+<h2>CODE AI Classroom Demo</h2>
 
 <div class="video">
 
 <iframe width="100%" height="450"
-src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+src="https://youtube.com/shorts/FBZD4PdtLCs?feature=share"
 frameborder="0"
 allowfullscreen></iframe>
 
@@ -449,28 +432,28 @@ allowfullscreen></iframe>
 
 <div class="container" id="why" data-aos="fade-up">
 
-<h2>Why Schools Choose Code AI</h2>
+<h2>Why Schools Choose CODE AI</h2>
 
 <div class="features">
 
 <div class="feature">
 <h3>Future Skills Curriculum</h3>
-<p>Students learn coding, robotics and AI through project-based learning.</p>
+<p>Students learn AI, coding and robotics through practical projects.</p>
 </div>
 
 <div class="feature">
-<h3>Hands-on Robotics Kits</h3>
-<p>Students build real working robots.</p>
+<h3>Hands-on Robotics</h3>
+<p>Students build real robots using Arduino and sensors.</p>
 </div>
 
 <div class="feature">
 <h3>Aligned with NEP 2020</h3>
-<p>Modern technology education for schools.</p>
+<p>Technology education aligned with modern curriculum goals.</p>
 </div>
 
 <div class="feature">
 <h3>Industry Experience</h3>
-<p>Programs designed by experienced engineers.</p>
+<p>Programs designed by engineers with real industry experience.</p>
 </div>
 
 </div>
@@ -486,7 +469,7 @@ allowfullscreen></iframe>
 
 <p class="testimonial">
 
-“Students were highly engaged during the robotics workshop and learned practical technology concepts.”
+“Students were extremely engaged during the robotics workshop and built real projects.”
 
 </p>
 
@@ -506,7 +489,7 @@ allowfullscreen></iframe>
 <strong>Ranjan Ali</strong><br><br>
 
 M.Tech – IIT Guwahati<br>
-Senior Engineer – Mercedes-Benz Research & Development India<br>
+Senior Engineer – Mercedes-Benz R&D India<br>
 Former Deputy Manager – Mahindra Electric<br>
 8+ Years Industry Experience
 
