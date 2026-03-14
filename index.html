@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,6 +64,10 @@ text-decoration:none;
 font-weight:bold;
 }
 
+.hero-button:hover{
+background:#f2f2f2;
+}
+
 .container{
 max-width:1100px;
 margin:auto;
@@ -98,54 +101,55 @@ box-shadow:0 4px 10px rgba(0,0,0,0.05);
 margin-top:20px;
 }
 
-/* Carousel */
+/* Gallery */
 
-.carousel{
-max-width:900px;
-margin:auto;
-position:relative;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
 }
 
-.slide{
-display:none;
-}
-
-.slide img{
+.gallery img{
 width:100%;
-height:420px;
+height:200px;
 object-fit:cover;
 border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.caption{
-text-align:center;
-margin-top:10px;
-font-weight:500;
+/* Form */
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:20px;
 }
 
-.prev, .next{
-cursor:pointer;
-position:absolute;
-top:50%;
-padding:12px 18px;
-color:white;
+form input, form textarea{
+padding:12px;
+border:none;
+border-radius:6px;
+}
+
+form textarea{
+height:100px;
+}
+
+form button{
+background:#ffcc00;
+border:none;
+padding:12px;
 font-weight:bold;
-font-size:22px;
-background:rgba(0,0,0,0.5);
-border-radius:50%;
-user-select:none;
+border-radius:6px;
+cursor:pointer;
 }
 
-.prev{
-left:10px;
-}
-
-.next{
-right:10px;
-}
-
-.prev:hover, .next:hover{
-background:#000;
+form button:hover{
+background:#f2b800;
 }
 
 .cta{
@@ -179,11 +183,16 @@ text-decoration:none;
 box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
+.whatsapp:hover{
+background:#1ebe5d;
+}
+
 </style>
 
 </head>
 
 <body>
+
 
 <nav>
 
@@ -202,6 +211,7 @@ CODE AI
 </div>
 
 </nav>
+
 
 <header>
 
@@ -268,60 +278,18 @@ hands-on learning and practical technology education.
 
 <p>Examples of robotics and AI projects students can build through CODE AI programs.</p>
 
-<div class="carousel">
+<div class="gallery">
 
-<div class="slide">
 <img src="images/DMS_im1.jpeg">
-<div class="caption">Student Robotics Project</div>
-</div>
-
-<div class="slide">
 <img src="images/DMS_im2.jpeg">
-<div class="caption">Arduino Robotics Learning</div>
-</div>
-
-<div class="slide">
 <img src="images/DMS_im3.jpeg">
-<div class="caption">Hands-on Robotics Session</div>
-</div>
-
-<div class="slide">
 <img src="images/DMS_im4.jpeg">
-<div class="caption">AI & Robotics Training</div>
-</div>
-
-<div class="slide">
 <img src="images/DMS_im5.jpg">
-<div class="caption">Robot Building Activity</div>
-</div>
-
-<div class="slide">
 <img src="images/AIHS_1 (1).jpeg">
-<div class="caption">School Robotics Workshop</div>
-</div>
-
-<div class="slide">
 <img src="images/AIHS_1 (4).jpeg">
-<div class="caption">Coding & Robotics Learning</div>
-</div>
-
-<div class="slide">
 <img src="images/AIHS_1 (5).jpeg">
-<div class="caption">Students Building Robots</div>
-</div>
-
-<div class="slide">
 <img src="images/NPS_1.jpeg">
-<div class="caption">Robotics Classroom</div>
-</div>
-
-<div class="slide">
 <img src="images/NPS_2.jpeg">
-<div class="caption">Student Innovation Projects</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
 
 </div>
 
@@ -393,14 +361,25 @@ Former Deputy Manager – Mahindra Electric<br>
 
 <div class="cta" id="contact">
 
-<h2>Partner With Code AI</h2>
+<h2>Request a School Demo</h2>
 
 <p>Bring AI, Coding and Robotics education to your school.</p>
 
-<p>
-Phone: 7980610537<br>
-Email: codeai.edu@gmail.com
-</p>
+<form action="https://formspree.io/f/mreylnqo" method="POST">
+
+<input type="text" name="school" placeholder="School Name" required>
+
+<input type="text" name="person" placeholder="Contact Person" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<input type="text" name="city" placeholder="City" required>
+
+<textarea name="message" placeholder="Message"></textarea>
+
+<button type="submit">Request Demo</button>
+
+</form>
 
 </div>
 
@@ -417,37 +396,6 @@ Chat on WhatsApp
 </a>
 
 
-<script>
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n){
-showSlides(slideIndex += n);
-}
-
-function showSlides(n){
-
-let slides = document.getElementsByClassName("slide");
-
-if(n > slides.length){slideIndex = 1}
-if(n < 1){slideIndex = slides.length}
-
-for(let i=0;i<slides.length;i++){
-slides[i].style.display="none";
-}
-
-slides[slideIndex-1].style.display="block";
-
-}
-
-setInterval(function(){
-plusSlides(1);
-},4000);
-
-</script>
-
 </body>
 
 </html>
-
