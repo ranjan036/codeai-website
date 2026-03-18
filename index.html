@@ -200,7 +200,7 @@ margin:auto;
 margin-top:30px;
 }
 
-/* TESTIMONIAL */
+/* TESTIMONIAL UPGRADE */
 
 .testimonials{
 background:#eef3fb;
@@ -208,10 +208,50 @@ padding:70px 20px;
 text-align:center;
 }
 
-.testimonial{
-max-width:700px;
+.testimonial-box{
+max-width:600px;
 margin:auto;
+background:#ffffff;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.testimonial-box img{
+width:80px;
+height:80px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+.testimonial-text{
 font-style:italic;
+margin-bottom:15px;
+}
+
+.testimonial-name{
+font-weight:bold;
+color:#0b3d6d;
+}
+
+.testimonial-role{
+font-size:14px;
+color:#666;
+}
+
+.testimonial-buttons{
+margin-top:15px;
+}
+
+.testimonial-buttons button{
+padding:8px 14px;
+margin:5px;
+border:none;
+background:#0b3d6d;
+color:white;
+border-radius:5px;
+cursor:pointer;
 }
 
 /* FOUNDER */
@@ -286,14 +326,10 @@ font-weight:bold;
 
 </head>
 
-
 <body>
 
-
 <!-- NAVBAR -->
-
 <nav>
-
 <div class="logo">
 <img src="images/codeai_logo.png">
 <span>CODE AI</span>
@@ -305,54 +341,34 @@ font-weight:bold;
 <a href="#why">Why Code AI</a>
 <a href="#contact">Request Demo</a>
 </div>
-
 </nav>
 
-
 <!-- HERO -->
-
 <section class="hero">
-
 <div class="hero-content">
-
 <h1>AI, Coding & Robotics Programs for Schools</h1>
-
 <p>
 Students build real robots, learn Python programming,
 and explore Artificial Intelligence through hands-on projects.
 </p>
-
 <a class="hero-btn" href="#contact">Request School Demo</a>
-
 </div>
-
 </section>
 
-
 <!-- SCHOOLS -->
-
 <div class="container" data-aos="fade-up">
-
 <h2>Schools Where CODE AI Conducted Workshops</h2>
-
 <div class="schools">
-
 <img src="images/school1.jpeg">
 <img src="images/school2.jpeg">
 <img src="images/school3.jpeg">
 <img src="images/school4.jpeg">
-
 </div>
-
 </div>
-
 
 <!-- PROGRAMS -->
-
 <div class="container" id="programs" data-aos="fade-up">
-
 <h2>CODE AI Programs</h2>
-
 <div class="cards">
 
 <div class="card">
@@ -363,7 +379,6 @@ and explore Artificial Intelligence through hands-on projects.
 <li>Computational thinking</li>
 <li>Logic building</li>
 </ul>
-
 </div>
 
 <div class="card">
@@ -375,7 +390,6 @@ and explore Artificial Intelligence through hands-on projects.
 <li>Simple coding projects</li>
 <li>Intro to robotics concepts</li>
 </ul>
-
 </div>
 
 <div class="card">
@@ -387,7 +401,6 @@ and explore Artificial Intelligence through hands-on projects.
 <li>Obstacle avoiding robot</li>
 <li>Sensor based automation</li>
 </ul>
-
 </div>
 
 <div class="card">
@@ -402,16 +415,11 @@ and explore Artificial Intelligence through hands-on projects.
 </div>
 
 </div>
-
 </div>
 
-
 <!-- PROJECTS -->
-
 <div class="container" id="projects" data-aos="fade-up">
-
 <h2>Student Robotics Projects</h2>
-
 <div class="projects">
 
 <div class="project">
@@ -435,34 +443,22 @@ and explore Artificial Intelligence through hands-on projects.
 </div>
 
 </div>
-
 </div>
 
-
 <!-- VIDEO -->
-
 <div class="container" data-aos="fade-up">
-
 <h2>CODE AI Classroom Demo</h2>
-
 <div class="video">
-
 <iframe width="100%" height="450"
 src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
 frameborder="0"
 allowfullscreen></iframe>
-
+</div>
 </div>
 
-</div>
-
-
-<!-- WHY CODE AI -->
-
+<!-- WHY -->
 <div class="container" id="why" data-aos="fade-up">
-
 <h2>Why Schools Choose Code AI</h2>
-
 <div class="features">
 
 <div class="feature">
@@ -486,89 +482,78 @@ allowfullscreen></iframe>
 </div>
 
 </div>
-
 </div>
 
-
-<!-- TESTIMONIAL -->
-
-<div class="testimonials">
+<!-- TESTIMONIAL (UPDATED) -->
+<div class="testimonials" id="testimonials">
 
 <h2>What Schools Say</h2>
 
-<p class="testimonial">
+<div class="testimonial-box">
 
-“Students were highly engaged during the robotics workshop and learned practical technology concepts.”
+<img id="t-img" src="images/school1.jpeg">
 
+<p class="testimonial-text" id="t-text">
+"Students were highly engaged during the robotics workshop and learned practical technology concepts."
 </p>
+
+<div class="testimonial-name" id="t-name">
+Principal Name
+</div>
+
+<div class="testimonial-role" id="t-role">
+ABC School
+</div>
+
+<div class="testimonial-buttons">
+<button onclick="prevTestimonial()">Prev</button>
+<button onclick="nextTestimonial()">Next</button>
+</div>
 
 </div>
 
+</div>
 
 <!-- FOUNDER -->
-
 <div class="container founder" data-aos="fade-up">
-
 <h2>About the Founder</h2>
-
 <img src="images/founder.jpeg">
-
 <p>
-
 <strong>Ranjan Ali</strong><br><br>
-
 M.Tech – IIT Guwahati<br>
 B.Tech – NIT Guwahati<br>
 Senior Engineer – Mercedes-Benz Research & Development India<br>
 Former Deputy Manager – Mahindra Electric<br>
 8+ Years Industry Experience
-
 </p>
-
 </div>
 
-
-<!-- DEMO FORM -->
-
+<!-- FORM -->
 <div class="cta" id="contact">
-
 <h2>Bring AI & Robotics Education to Your School</h2>
-
 <p>Request a free demo session.</p>
 
 <form action="https://formspree.io/f/mreylnqo" method="POST">
-
 <input type="text" name="school" placeholder="School Name" required>
-
 <input type="text" name="person" placeholder="Contact Person" required>
-
 <input type="tel" name="phone" placeholder="Phone Number" required>
-
 <input type="text" name="city" placeholder="City" required>
-
 <textarea name="message" placeholder="Message"></textarea>
-
 <button type="submit">Request Demo</button>
-
 </form>
 
 </div>
 
-
 <footer>
-
 <p>
 Code AI<br><br>
 AI, Coding & Robotics Education for Schools<br><br>
 Phone: 7980610537<br>
 Email: codeai.edu@gmail.com
 </p>
-
 </footer>
 
-
 <a class="whatsapp" href="https://wa.me/917980610537">WhatsApp</a>
-
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
@@ -579,6 +564,56 @@ once:true
 });
 </script>
 
-</body>
+<!-- TESTIMONIAL JS -->
+<script>
 
+const testimonials = [
+
+{
+img:"images/FrBinoj.jpeg",
+text:"DeMatha English Medium School conducted an AI, Coding, and Robotics workshop for our Class 7 students on January 6, 2026. The session was highly engaging, hands-on, and sparked strong interest in technology among the students. The program was well-structured and professionally delivered. We appreciate Mr. Ranjan Ali and the CODE AI team for their expertise and dedication.",
+name:"Principal Fr Binoj Mathew",
+role:"DMS, Tulsibari,Rangia"
+},
+
+{
+img:"images/Anthony.jpeg",
+text:"Noonmati Public Senior Secondary School hosted Ranjan Ali, founder of CodeAI, for an inspiring AI and robotics demonstration. He presented real-world uses of Artificial Intelligence in a simple, engaging way. The session sparked curiosity and encouraged students to explore coding and new technologies. We thank Mr. Ranjan Ali for inspiring our students and sharing his vision for the future.",
+name:"Principal Anthony Peter",
+role:"NPS kamarkuchi"
+},
+
+{
+img:"images/school4.jpeg",
+text:"Excellent hands-on learning approach. Students loved building robots.",
+name:"Principal Manoj Borah",
+role:"MVM Rangia"
+}
+
+];
+
+let index = 0;
+
+function showTestimonial(){
+document.getElementById("t-img").src = testimonials[index].img;
+document.getElementById("t-text").innerText = testimonials[index].text;
+document.getElementById("t-name").innerText = testimonials[index].name;
+document.getElementById("t-role").innerText = testimonials[index].role;
+}
+
+function nextTestimonial(){
+index = (index + 1) % testimonials.length;
+showTestimonial();
+}
+
+function prevTestimonial(){
+index = (index - 1 + testimonials.length) % testimonials.length;
+showTestimonial();
+}
+
+setInterval(nextTestimonial, 4000);
+
+</script>
+
+</body>
 </html>
