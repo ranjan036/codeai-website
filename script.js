@@ -1,32 +1,42 @@
+// Wait until page loads
 document.addEventListener("DOMContentLoaded", function(){
 
+/* AOS INIT */
 AOS.init({
 duration:1000,
 once:true
 });
 
+/* TESTIMONIAL DATA */
+
 const testimonials = [
+
 {
 img:"images/FrBinoj.jpg",
-text:"DeMatha English Medium School conducted an AI, Coding, and Robotics workshop...",
+text:"Highly engaging & hands-on learning experience.\n\n✔ Students showed strong interest in AI & Robotics\n✔ Practical exposure beyond textbooks\n✔ Well-structured and professionally delivered\n\nThe session truly inspired our students to explore technology.",
 name:"Principal Fr Binoj Mathew",
-role:"DMS, Tulsibari,Rangia"
+role:"DeMatha English Medium School, Rangia"
 },
+
 {
 img:"images/Anthony.jpeg",
-text:"Noonmati Public Senior Secondary School hosted Ranjan Ali...",
+text:"Inspiring session that made AI simple and exciting.\n\n✔ Real-world applications explained clearly\n✔ Students became curious about coding\n✔ Highly interactive and engaging approach\n\nA great initiative to prepare students for future technology.",
 name:"Principal Anthony Peter",
-role:"NPS kamarkuchi"
+role:"Noonmati Public School"
 },
+
 {
 img:"images/school4.jpeg",
-text:"Excellent hands-on learning approach...",
+text:"Students absolutely loved building real robots.\n\n✔ Hands-on robotics learning\n✔ Fun + education combined\n✔ Strong student participation\n\nOne of the most engaging workshops we’ve hosted.",
 name:"Principal Manoj Borah",
 role:"MVM Rangia"
 }
+
 ];
 
 let index = 0;
+
+/* UPDATE DOTS */
 
 function updateDots(){
 let dots = document.querySelectorAll(".dot");
@@ -38,14 +48,23 @@ dot.classList.add("active");
 });
 }
 
+/* SHOW TESTIMONIAL */
+
 function showTestimonial(){
+
 document.getElementById("t-img").src = testimonials[index].img;
-document.getElementById("t-text").innerText = testimonials[index].text;
+
+// Convert \n to line breaks
+document.getElementById("t-text").innerHTML =
+testimonials[index].text.replace(/\n/g, "<br>");
+
 document.getElementById("t-name").innerText = testimonials[index].name;
 document.getElementById("t-role").innerText = testimonials[index].role;
 
 updateDots();
 }
+
+/* AUTO SLIDER CONTROL */
 
 let interval = setInterval(nextTestimonial, 4000);
 
@@ -54,11 +73,15 @@ clearInterval(interval);
 interval = setInterval(nextTestimonial, 4000);
 }
 
+/* NEXT */
+
 function nextTestimonial(){
 index = (index + 1) % testimonials.length;
 showTestimonial();
 resetInterval();
 }
+
+/* PREV */
 
 function prevTestimonial(){
 index = (index - 1 + testimonials.length) % testimonials.length;
@@ -66,11 +89,15 @@ showTestimonial();
 resetInterval();
 }
 
+/* DOT CLICK */
+
 function setTestimonial(i){
 index = i;
 showTestimonial();
 resetInterval();
 }
+
+/* INITIAL LOAD */
 
 showTestimonial();
 
