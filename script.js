@@ -57,6 +57,8 @@ document.getElementById("t-img").src = testimonials[index].img;
 // Convert \n to line breaks
 document.getElementById("t-text").innerHTML =
 testimonials[index].text.replace(/\n/g, "<br>");
+document.getElementById("t-highlight").innerText =
+testimonials[index].text.split(".")[0];
 
 document.getElementById("t-name").innerText = testimonials[index].name;
 document.getElementById("t-role").innerText = testimonials[index].role;
