@@ -184,58 +184,110 @@ margin:auto;
 margin-top:30px;
 }
 
-/* TESTIMONIAL - FIXED */
+
+/* TESTIMONIAL - PREMIUM UI */
 
 .testimonials{
-background:linear-gradient(135deg, #eef3fb, #dfe9f7);
-padding:90px 20px;
+background:linear-gradient(135deg,#eef3fb,#dfe9f7);
+padding:100px 20px;
 text-align:center;
+position:relative;
 }
 
-.testimonial-box{
-max-width:600px;
-margin:auto;
-background:#ffffff;
-padding:30px;
-border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-}
-
-.testimonial-box img{
-width:80px;
-height:80px;
-border-radius:50%;
-object-fit:cover;
-margin-bottom:15px;
-}
-
-.testimonial-text{
-font-style:italic;
-margin-bottom:15px;
-}
-
-.testimonial-name{
-font-weight:bold;
+.testimonials h2{
+font-size:34px;
+margin-bottom:50px;
 color:#0b3d6d;
 }
 
-.testimonial-role{
-font-size:14px;
-color:#666;
+/* CARD */
+
+.testimonial-box{
+max-width:650px;
+margin:auto;
+background:#ffffff;
+padding:40px 30px;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
+/* IMAGE */
+
+.testimonial-box img{
+width:90px;
+height:90px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #eef3fb;
+margin-bottom:15px;
+}
+
+/* TEXT */
+
+.testimonial-text{
+font-style:italic;
+font-size:16px;
+line-height:1.6;
+margin-bottom:20px;
+color:#444;
+}
+
+/* NAME */
+
+.testimonial-name{
+font-weight:bold;
+font-size:18px;
+color:#0b3d6d;
+}
+
+/* ROLE */
+
+.testimonial-role{
+font-size:14px;
+color:#777;
+margin-top:4px;
+}
+
+/* BUTTONS */
+
 .testimonial-buttons{
-margin-top:15px;
+margin-top:20px;
 }
 
 .testimonial-buttons button{
-padding:8px 14px;
+padding:8px 16px;
 margin:5px;
 border:none;
 background:#0b3d6d;
 color:white;
-border-radius:5px;
+border-radius:20px;
 cursor:pointer;
+transition:0.3s;
+}
+
+.testimonial-buttons button:hover{
+background:#082c50;
+}
+
+/* DOTS */
+
+.dots{
+margin-top:20px;
+}
+
+.dot{
+display:inline-block;
+width:10px;
+height:10px;
+margin:5px;
+background:#bbb;
+border-radius:50%;
+cursor:pointer;
+}
+
+.dot.active{
+background:#0b3d6d;
 }
 
 /* FOUNDER */
