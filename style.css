@@ -487,13 +487,7 @@ padding-left:18px;
 .team-card{
 width:320px;
 }
-.team-card img{
-width:140px;
-height:140px;
-border-radius:50%;
-object-fit:cover;
-object-position:top center;
-}
+
 .team-card img{
 width:140px;
 height:140px;
