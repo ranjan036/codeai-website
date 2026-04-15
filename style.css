@@ -26,13 +26,18 @@ z-index:1000;
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
+gap:12px;
 font-size:22px;
 font-weight:bold;
 }
 
 .logo img{
-height:40px;
+height: 55px;
+filter: brightness(1.3);
+}
+.logo span{
+font-size:24px;
+font-weight:bold;
 }
 
 nav a{
