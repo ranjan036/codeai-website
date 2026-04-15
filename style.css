@@ -487,3 +487,25 @@ padding-left:18px;
 .team-card{
 width:320px;
 }
+.team-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+object-position:top center;
+}
+.team-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+object-position:top center;
+}
+.team-card{
+border:1px solid rgba(0,0,0,0.05);
+}
+#team{
+background:linear-gradient(180deg,#f7f9fc,#eef3fb);
+padding-top:60px;
+padding-bottom:60px;
+}
