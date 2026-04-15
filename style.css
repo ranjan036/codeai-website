@@ -426,9 +426,10 @@ font-size:14px;
 /* TEAM GRID */
 
 .team-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
-gap:30px;
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
 margin-top:40px;
 }
 
@@ -482,4 +483,7 @@ margin-bottom:10px;
 text-align:left;
 font-size:14px;
 padding-left:18px;
+}
+.team-card{
+width:320px;
 }
