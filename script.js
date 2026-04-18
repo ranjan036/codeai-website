@@ -122,7 +122,7 @@ function selectService(service){
     mode.style.display = "block";
     button.innerText = "Book Demo Class";
   } 
-  else if(service === "Website Development"){
+  else if(service === "Website & App Development"){
     mode.style.display = "none";
     button.innerText = "Book Consultation";
   }
@@ -132,3 +132,36 @@ function selectService(service){
   }
 
 }
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+  e.preventDefault(); // stop normal submit
+
+  // Get values
+  let name = document.querySelector('[name="organization"]').value;
+  let person = document.querySelector('[name="person"]').value;
+  let phone = document.querySelector('[name="phone"]').value;
+  let city = document.querySelector('[name="city"]').value;
+  let service = document.getElementById("serviceSelect").value;
+  let mode = document.getElementById("modeSelect").value;
+  let message = document.querySelector('[name="message"]').value;
+
+  // Create WhatsApp message
+  let text = `Hello CODE AI,%0A%0A` +
+             `New Inquiry:%0A` +
+             `Name: ${name}%0A` +
+             `Contact Person: ${person}%0A` +
+             `Phone: ${phone}%0A` +
+             `City: ${city}%0A` +
+             `Service: ${service}%0A` +
+             `Mode: ${mode}%0A` +
+             `Message: ${message}`;
+
+  // Your WhatsApp number (replace if needed)
+  let whatsappNumber = "7980610537";
+
+  let url = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+  // Open WhatsApp
+  window.open(url, "_blank");
+
+});
