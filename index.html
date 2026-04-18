@@ -44,6 +44,42 @@ and explore Artificial Intelligence through hands-on projects.
 <a class="hero-btn" href="#contact">Request School Demo</a>
 </div>
 </section>
+<!-- SERVICES -->
+<div class="container" id="services" data-aos="fade-up">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<!-- SERVICE 1 -->
+<div class="service-card">
+<h3>Collaboration with Schools</h3>
+<p>AI, Coding & Robotics programs integrated into school curriculum.</p>
+<button onclick="selectService('School Collaboration')">
+Request Demo
+</button>
+</div>
+
+<!-- SERVICE 2 -->
+<div class="service-card">
+<h3>In-Centre Learning</h3>
+<p>Students learn coding, AI and robotics through hands-on classes.</p>
+<button onclick="selectService('In-Centre Learning')">
+Book Demo Class
+</button>
+</div>
+
+<!-- SERVICE 3 -->
+<div class="service-card">
+<h3>Website & App Development</h3>
+<p>We build websites and applications for businesses and startups.</p>
+<button onclick="selectService('Website Development')">
+Book Consultation
+</button>
+</div>
+
+</div>
+</div>
+
 
 <!-- SCHOOLS -->
 <div class="container" data-aos="fade-up">
@@ -262,10 +298,22 @@ Educator with strong academic background and experience in both government schoo
 <h2>Bring AI & Robotics Education to Your School</h2>
 
 <form action="https://formspree.io/f/mreylnqo" method="POST">
-<input type="text" name="school" placeholder="School Name" required>
+<input type="text" name="organization" placeholder="School/Student Name" required>
 <input type="text" name="person" placeholder="Contact Person" required>
 <input type="tel" name="phone" placeholder="Phone Number" required>
 <input type="text" name="city" placeholder="City" required>
+<select id="serviceSelect" name="service" required>
+<option value="">Select Service</option>
+<option>School Collaboration</option>
+<option>In-Centre Learning</option>
+<option>Website Development</option>
+</select>
+
+<select id="modeSelect" name="mode">
+<option value="">Class Mode</option>
+<option>Online</option>
+<option>Offline</option>
+</select>
 <textarea name="message" placeholder="Message"></textarea>
 <button type="submit">Request Demo</button>
 </form>

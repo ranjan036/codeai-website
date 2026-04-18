@@ -100,7 +100,29 @@ resetInterval();
 }
 
 /* INITIAL LOAD */
+// Hide mode initially
+let mode = document.getElementById("modeSelect");
+if(mode){
+  mode.style.display = "none";
+}
 
 showTestimonial();
 
 });
+function selectService(service){
+
+document.getElementById("serviceSelect").value = service;
+
+// Scroll to form
+document.getElementById("contact").scrollIntoView({behavior:'smooth'});
+
+// Show mode only for students
+let mode = document.getElementById("modeSelect");
+
+if(service === "In-Centre Learning"){
+mode.style.display = "block";
+}else{
+mode.style.display = "none";
+}
+
+}
