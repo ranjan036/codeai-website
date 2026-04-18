@@ -121,18 +121,18 @@ function selectService(service){
   let mode = document.getElementById("modeSelect");
   let button = document.querySelector("#contact button");
 
-  if(service === "In-Centre Learning"){
+  if(service === "centre"){
     mode.style.display = "block";
-    button.innerText = "Book Demo Class";
-  } 
-  else if(service === "Website & App Development"){
+    btn.innerText = "Book Demo Class";
+} 
+else if(service === "web"){
     mode.style.display = "none";
-    button.innerText = "Book Consultation";
-  }
-  else {
+    btn.innerText = "Book Consultation";
+} 
+else {
     mode.style.display = "none";
-    button.innerText = "Request Demo";
-  }
+    btn.innerText = "Request Demo";
+}
 
 }
 document.getElementById("contactForm").addEventListener("submit", function(e){
