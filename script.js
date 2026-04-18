@@ -111,18 +111,24 @@ showTestimonial();
 });
 function selectService(service){
 
-document.getElementById("serviceSelect").value = service;
+  document.getElementById("serviceSelect").value = service;
 
-// Scroll to form
-document.getElementById("contact").scrollIntoView({behavior:'smooth'});
+  document.getElementById("contact").scrollIntoView({behavior:'smooth'});
 
-// Show mode only for students
-let mode = document.getElementById("modeSelect");
+  let mode = document.getElementById("modeSelect");
+  let button = document.querySelector("#contact button");
 
-if(service === "In-Centre Learning"){
-mode.style.display = "block";
-}else{
-mode.style.display = "none";
-}
+  if(service === "In-Centre Learning"){
+    mode.style.display = "block";
+    button.innerText = "Book Demo Class";
+  } 
+  else if(service === "Website Development"){
+    mode.style.display = "none";
+    button.innerText = "Book Consultation";
+  }
+  else {
+    mode.style.display = "none";
+    button.innerText = "Request Demo";
+  }
 
 }
