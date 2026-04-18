@@ -109,31 +109,43 @@ if(mode){
 showTestimonial();
 
 });
+
+
 function selectService(service){
 
-    //reset old form details
-    document.getElementById("contactForm").reset();
+    console.log("Selected service:", service); // DEBUG
 
-  document.getElementById("serviceSelect").value = service;
+    const form = document.getElementById("contactForm");
+    const serviceSelect = document.getElementById("serviceSelect");
+    const mode = document.getElementById("modeSelect");
+    const btn = document.getElementById("submitBtn");
 
-  document.getElementById("contact").scrollIntoView({behavior:'smooth'});
+    // Reset form
+    form.reset();
 
-  let mode = document.getElementById("modeSelect");
-  let button = document.querySelector("#contact button");
+    // Set dropdown value
+    serviceSelect.value = service;
 
-  if(service === "centre"){
-    mode.style.display = "block";
-    btn.innerText = "Book Demo Class";
-} 
-else if(service === "web"){
-    mode.style.display = "none";
-    btn.innerText = "Book Consultation";
-} 
-else {
-    mode.style.display = "none";
-    btn.innerText = "Request Demo";
-}
+    // Scroll
+    document.getElementById("contact").scrollIntoView({behavior:'smooth'});
 
+    // Logic
+    if(service === "centre"){
+        mode.style.display = "block";
+        btn.innerText = "Book Demo Class";
+    } 
+    else if(service === "web"){
+        mode.style.display = "none";
+        btn.innerText = "Book Consultation";
+    } 
+    else if(service === "school"){
+        mode.style.display = "none";
+        btn.innerText = "Request Demo";
+    } 
+    else {
+        mode.style.display = "none";
+        btn.innerText = "Request Demo";
+    }
 }
 document.getElementById("contactForm").addEventListener("submit", function(e){
 
