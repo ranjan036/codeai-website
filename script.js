@@ -111,6 +111,9 @@ showTestimonial();
 });
 function selectService(service){
 
+    //reset old form details
+    document.getElementById("contactForm").reset();
+
   document.getElementById("serviceSelect").value = service;
 
   document.getElementById("contact").scrollIntoView({behavior:'smooth'});
