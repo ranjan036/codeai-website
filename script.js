@@ -142,6 +142,12 @@ function selectService(service){
         mode.style.display = "none";
         btn.innerText = "Request Demo";
     } 
+    else if(service === "1-to-1 AI, Coding & Robotics Program") {
+        mode.style.display = "none";
+        btn.innerText = "Enroll Now";
+
+
+    }
     else if(service === "internship"){
         mode.style.display = "none";
         btn.innerText = "Apply for Internship";
