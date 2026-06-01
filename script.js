@@ -142,6 +142,10 @@ function selectService(service){
         mode.style.display = "none";
         btn.innerText = "Request Demo";
     } 
+    else if(service === "internship"){
+        mode.style.display = "none";
+        btn.innerText = "Apply for Internship";
+    }
     else {
         mode.style.display = "none";
         btn.innerText = "Request Demo";
