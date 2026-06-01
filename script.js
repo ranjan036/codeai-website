@@ -142,7 +142,7 @@ function selectService(service){
         mode.style.display = "none";
         btn.innerText = "Request Demo";
     } 
-    else if(service === "1-to-1 AI, Coding & Robotics Program") {
+    else if(service === "online") {
         mode.style.display = "none";
         btn.innerText = "Enroll Now";
 
