@@ -445,20 +445,32 @@ font-size:14px;
 .team-grid{
 display:flex;
 justify-content:center;
-gap:40px;
+gap:30px;
 flex-wrap:wrap;
 margin-top:40px;
 }
 
 /* TEAM CARD */
 
-.team-card{
+/*.team-card{
 background:linear-gradient(135deg, #ffffff, #f7f9fc);
 padding:30px;
 border-radius:16px;
 box-shadow:0 10px 30px rgba(0,0,0,0.1);
 text-align:center;
 transition:0.3s;
+}*/
+.team-card{
+    background: linear-gradient(135deg, #ffffff, #f7f9fc);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+
+    width: 280px;
+    max-width: 280px;
+    box-sizing: border-box;
 }
 
 .team-card:hover{
